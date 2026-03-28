@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Data Analyst | Achmad Rafi Shiddik</title>
+    <title>Data Analyst Portfolio | Achmad Rafi Shiddik</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +12,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .insight-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .insight-images img {
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: transform 0.3s ease;
+        }
+        .insight-images img:hover {
+            transform: scale(1.05);
+            z-index: 10;
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
@@ -22,10 +40,10 @@
             </div>
             <div class="menu">
                 <ul class="nav-links">
-                    <li><a href="#tentang-saya">Tentang Saya</a></li>
-                    <li><a href="#statistic">Keahlian Utama</a></li>
-                    <li><a href="#project-saya">Project Portofolio</a></li>
-                    <li><a href="#artikel-saya">Artikel</a></li>
+                    <li><a href="#tentang-saya">About Me</a></li>
+                    <li><a href="#statistic">Core Skills</a></li>
+                    <li><a href="#project-saya">Portfolio Projects</a></li>
+                    <li><a href="#artikel-saya">Articles</a></li>
                 </ul>
             </div>
             <button class="hamburger-menu" aria-label="Toggle menu">
@@ -39,15 +57,15 @@
     <header class="hero">
         <div class="header-overlay"></div>
         <div class="wrapper hero-content">
-            <h4 class="greeting">Halo! Selamat Datang di Portofolio</h4>
+            <h4 class="greeting">Hello! Welcome to my Portfolio</h4>
             <h1 class="name">Achmad Rafi Shiddik</h1>
             <h2 class="role">Data Science Enthusiast</h2>
             <p class="description">
-                Berpengalaman dalam mengolah data kompleks menjadi *insight* berharga <br>
-                yang berdampak pada bisnis. Saya sangat menghargai feedback Anda!
+                Experienced in transforming complex data into valuable insights <br>
+                that drive business impact. I highly appreciate your feedback!
             </p>
             <div class="hero-buttons">
-                <a href="#project-saya" class="button button-primary">Lihat Project Saya <i class="fa-solid fa-arrow-down"></i></a>
+                <a href="#project-saya" class="button button-primary">View My Projects <i class="fa-solid fa-arrow-down"></i></a>
             </div>
         </div>
     </header>
@@ -79,8 +97,8 @@
     <section id="project-saya" class="section">
         <div class="wrapper">
             <div class="section-title">
-                <h2>Project <span>Karya Saya</span></h2>
-                <p>Berikut adalah beberapa project *Data Science* & *Analytics* yang pernah saya kerjakan</p>
+                <h2>My <span>Projects</span></h2>
+                <p>Here are some Data Science & Analytics projects I have worked on</p>
             </div>
 
             <div class="project-grid">
@@ -95,33 +113,38 @@
                             Is the penalizer we have created appropriate for measuring the accuracy of the customer retention model?
                         </h3>
                         <div class="project-desc">
-                            <p><strong>🎯 Tujuan:</strong></p>
+                            <p><strong>🎯 Objective:</strong></p>
                             <ul style="margin-left: 20px; margin-bottom: 15px; margin-top: 5px; color: var(--text-secondary);">
-                                <li>Grouping customers based on purchasing behavior</li>
+                                <li>Group customers based on purchasing behavior</li>
                                 <li>Prioritize high-value customers</li>
-                                <li>Designing more appropriate retention and acquisition strategies</li>
+                                <li>Design more appropriate retention and acquisition strategies</li>
                             </ul>
-                            <p><strong>🛠️ Metode:</strong> Applied RFM analysis combined with K-Means clustering to segment customers, and probabilistic models (BG/NBD & Gamma-Gamma) to estimate customer lifetime value.</p>
+                            <p><strong>🛠️ Methodology:</strong> Applied RFM analysis combined with K-Means clustering to segment customers, and probabilistic models (BG/NBD & Gamma-Gamma) to estimate customer lifetime value.</p>
                             <p style="margin-top: 10px;"><strong>⚙️ Tech Stack:</strong> Python, Pandas, Scikit-Learn, Lifetimes (BG/NBD), Streamlit</p>
                         </div>
                         
                         <div class="business-impact">
-                            <h4><i class="fa-solid fa-lightbulb"></i> Key Insight & Rekomendasi</h4>
-                            <div class="insight-image" style="margin: 15px 0;">
-                                <img src="image/project1-insight.png" alt="Customer Retention Key Insights" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
-                            </div>
+                            <h4><i class="fa-solid fa-lightbulb"></i> Key Insights & Recommendations</h4>
                             <ul>
-                                <li style="margin-bottom: 8px;"><strong>Kondisi Mayoritas:</strong> Low frequency, high recency → ❗ Churn. Return rate hanya 1–2%.</li>
-                                <li style="margin-bottom: 8px;"><strong>Cluster Pelanggan:</strong>
+                                <li style="margin-bottom: 8px;"><strong>Majority Condition:</strong> Low frequency, high recency → ❗ Churn risk. The return rate is only 1–2%.</li>
+                                <li style="margin-bottom: 8px;"><strong>Customer Segmentation (Clusters):</strong>
                                     <ul style="margin-left: 15px; margin-top: 5px; margin-bottom: 5px; list-style-type: circle;">
                                         <li><strong>0:</strong> Loyal</li>
-                                        <li><strong>1:</strong> Big spender (sekali beli)</li>
-                                        <li><strong>2:</strong> Regular (🔥 paling penting & profitable)</li>
-                                        <li><strong>3:</strong> Tidak aktif</li>
+                                        <li><strong>1:</strong> Big spenders (one-time purchase)</li>
+                                        <li><strong>2:</strong> Regular (🔥 Most important & profitable)</li>
+                                        <li><strong>3:</strong> Inactive</li>
                                     </ul>
                                 </li>
-                                <li><strong>Rekomendasi:</strong> Terapkan <em>Loyalty program</em> yang difokuskan pada <strong>Cluster 2</strong>, dan luncurkan <em>Promo / Re-engagement campaign</em> untuk <strong>Cluster 3</strong>.</li>
+                                <li style="margin-bottom: 8px;"><strong>Recommendations:</strong> Implement a <em>Loyalty program</em> focused on <strong>Cluster 2</strong>, and launch <em>Promo / Re-engagement campaigns</em> for <strong>Cluster 3</strong>.</li>
                             </ul>
+                            
+                            <!-- Insight Images -->
+                            <div class="insight-images">
+                                <img src="image/insight_1.png" alt="Probability Cluster & Frequency">
+                                <img src="image/insight_2.png" alt="Retention Rate (First 12 Months)">
+                                <img src="image/insight_3.png" alt="Customer Segmentation by KMeans">
+                            </div>
+
                         </div>
                     </div>
                     <div class="card-footer">
@@ -141,7 +164,7 @@
                             Data-Driven Analysis and Prediction of Delivery Delays Using Machine Learning
                         </h3>
                         <div class="project-desc">
-                            <p><strong>Deskripsi Project:</strong> Developed a machine learning model using XGBoost to predict delivery delays based on logistics data (43K+ records). Performed feature engineering and hyperparameter tuning with Optuna, significantly improving model performance. Identified key drivers like product category and traffic conditions.</p>
+                            <p><strong>Project Description:</strong> Developed a machine learning model using XGBoost to predict delivery delays based on logistics data (43K+ records). Performed feature engineering and hyperparameter tuning with Optuna, significantly improving model performance. Identified key drivers like product category and traffic conditions.</p>
                         </div>
                         
                         <div class="business-impact">
@@ -167,7 +190,7 @@
         <div class="wrapper">
             <div class="section-title">
                 <h2>Tools & <span>Soft Skills</span></h2>
-                <p>Kombinasi antara kemampuan teknis dan interpersonal.</p>
+                <p>A combination of technical expertise and interpersonal skills.</p>
             </div>
             
             <div class="skills-container">
@@ -201,18 +224,17 @@
             <div class="about-container">
                 <div class="about-image">
                     <div class="image-wrapper">
-                        <!-- Use a placeholder if image not found, but trying to use local image link first -->
                         <img src="image/Foto.png" alt="Achmad Rafi Shiddik"/>
                         <div class="img-backdrop"></div>
                     </div>
                 </div>
                 <div class="about-text">
                     <div class="section-title left-align">
-                        <h2>Tentang <span>Saya</span></h2>
+                        <h2>About <span>Me</span></h2>
                     </div>
-                    <p class="lead">Halo, saya <strong>Achmad Rafi Shiddik</strong> dari Universitas Muhammadiyah Jakarta.</p>
-                    <p>Saya sangat antusias dalam menganalisis data dan memberikan <em>insight</em> bermakna. Prinsip utama saya adalah menjunjung tinggi kejujuran dan selalu berlandaskan fakta (data-driven) tanpa terlalu banyak berasumsi.</p>
-                    <p>Jika ada peluang kolaborasi atau diskusi lebih lanjut mengenai data, jangan ragu untuk menghubungi saya melalui kontak di bawah ini.</p>
+                    <p class="lead">Hello, I am <strong>Achmad Rafi Shiddik</strong> from Muhammadiyah University of Jakarta.</p>
+                    <p>I have a strong passion for analyzing data and providing meaningful insights. My core principle is to uphold integrity and always remain data-driven, avoiding assumptions wherever possible.</p>
+                    <p>If you're interested in collaborating or discussing further about data, feel free to reach out to me via the contacts below.</p>
                     
                     <div class="social-media">
                         <a href="https://www.linkedin.com/in/achmad-rafi-shiddik/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
@@ -229,8 +251,8 @@
     <section id="artikel-saya" class="section bg-light-dark">
         <div class="wrapper">
             <div class="section-title">
-                <h2>Artikel <span>Saya</span></h2>
-                <p>Saya juga senang membagikan pemikiran dan pembelajaran saya melalui tulisan.</p>
+                <h2>My <span>Articles</span></h2>
+                <p>I also love sharing my thoughts and learnings through writing.</p>
             </div>
             
             <div class="article-grid">
@@ -239,8 +261,8 @@
                         <img src="image/Artikel-1.png" alt="Artikel Pertama"/>
                     </div>
                     <div class="article-content">
-                        <h3>Analisis Data Akademis</h3>
-                        <a href="https://repository.umj.ac.id/7613/1/Artikel%20Arlin%20Rafi.pdf" target="_blank" class="button button-text">Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+                        <h3>Academic Data Analysis</h3>
+                        <a href="https://repository.umj.ac.id/7613/1/Artikel%20Arlin%20Rafi.pdf" target="_blank" class="button button-text">Read More <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </article>
 
@@ -249,8 +271,8 @@
                         <img src="image/Artikel-2.png" alt="Artikel Kedua"/>
                     </div>
                     <div class="article-content">
-                        <h3>Kenapa Harus Memilih Data Science?</h3>
-                        <a href="https://medium.com/@achmadrafishiddik0/kenapa-harus-memilih-data-science-faa1b5a4ffcb" target="_blank" class="button button-text">Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+                        <h3>Why Choose Data Science?</h3>
+                        <a href="https://medium.com/@achmadrafishiddik0/kenapa-harus-memilih-data-science-faa1b5a4ffcb" target="_blank" class="button button-text">Read More <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </article>
             </div>
@@ -260,7 +282,7 @@
     <!-- Footer -->
     <footer>
         <div class="wrapper">
-            <p>&copy; 2025 Portofolio Achmad Rafi Shiddik. Designed with passion for Data.</p>
+            <p>&copy; 2025 Achmad Rafi Shiddik Portfolio. Designed with a passion for Data.</p>
         </div>
     </footer>
 
