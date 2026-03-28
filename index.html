@@ -95,14 +95,29 @@
                             Is the penalizer we have created appropriate for measuring the accuracy of the customer retention model?
                         </h3>
                         <div class="project-desc">
-                            <p><strong>Deskripsi Project:</strong> In the global electronic e-commerce platform, the main challenge is to maintain customers to continue to make repeat transactions (retention) and prevent churn. This project uses a probabilistic approach for the last 12 months to analyze retention using BG/NBD and Gamma-Gamma models to estimate future transactions and customer monetary value.</p>
+                            <p><strong>🎯 Tujuan:</strong></p>
+                            <ul style="margin-left: 20px; margin-bottom: 15px; margin-top: 5px; color: var(--text-secondary);">
+                                <li>Grouping customers based on purchasing behavior</li>
+                                <li>Prioritize high-value customers</li>
+                                <li>Designing more appropriate retention and acquisition strategies</li>
+                            </ul>
+                            <p><strong>🛠️ Metode:</strong> Applied RFM analysis combined with K-Means clustering to segment customers, and probabilistic models (BG/NBD & Gamma-Gamma) to estimate customer lifetime value.</p>
+                            <p style="margin-top: 10px;"><strong>⚙️ Tech Stack:</strong> Python, Pandas, Scikit-Learn, Lifetimes (BG/NBD), Streamlit</p>
                         </div>
                         
                         <div class="business-impact">
-                            <h4><i class="fa-solid fa-bolt"></i> Business Impact</h4>
+                            <h4><i class="fa-solid fa-lightbulb"></i> Key Insight & Rekomendasi</h4>
                             <ul>
-                                <li>By identifying high-value customer segments, companies can target marketing more efficiently, reducing acquisition costs.</li>
-                                <li>Analysis shows only 20% of customers have made repeat purchases, with an 80% churn rate. This highlights a critical retention opportunity.</li>
+                                <li style="margin-bottom: 8px;"><strong>Kondisi Mayoritas:</strong> Low frequency, high recency → ❗ Churn. Return rate hanya 1–2%.</li>
+                                <li style="margin-bottom: 8px;"><strong>Cluster Pelanggan:</strong>
+                                    <ul style="margin-left: 15px; margin-top: 5px; margin-bottom: 5px; list-style-type: circle;">
+                                        <li><strong>0:</strong> Loyal</li>
+                                        <li><strong>1:</strong> Big spender (sekali beli)</li>
+                                        <li><strong>2:</strong> Regular (🔥 paling penting & profitable)</li>
+                                        <li><strong>3:</strong> Tidak aktif</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Rekomendasi:</strong> Terapkan <em>Loyalty program</em> yang difokuskan pada <strong>Cluster 2</strong>, dan luncurkan <em>Promo / Re-engagement campaign</em> untuk <strong>Cluster 3</strong>.</li>
                             </ul>
                         </div>
                     </div>
