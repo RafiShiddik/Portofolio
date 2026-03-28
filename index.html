@@ -1,147 +1,251 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
+    <title>Portofolio Data Analyst | Achmad Rafi Shiddik</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!--Menu-->
-    
-    <nav>
-        <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="wrapper nav-wrapper">
+            <div class="logo">
+                <a href="#">Rafi<span>.Data</span></a>
+            </div>
             <div class="menu">
-                <ul>
+                <ul class="nav-links">
                     <li><a href="#tentang-saya">Tentang Saya</a></li>
-                    <li><a href="#project-saya">Project yang Telah Saya Kerjakan</a></li>
-                    <li><a href="#project-saya">Dashboard Interaktif</a></li>
+                    <li><a href="#statistic">Keahlian Utama</a></li>
+                    <li><a href="#project-saya">Project Portofolio</a></li>
+                    <li><a href="#artikel-saya">Artikel</a></li>
                 </ul>
             </div>
-            <button class="hamburger-menu">
+            <button class="hamburger-menu" aria-label="Toggle menu">
                 <i class="fa-solid fa-bars icon-bars"></i>
                 <i class="fa-solid fa-xmark icon-close"></i>
             </button>
         </div>
-        </nav>
-    <!--hero-->
-    <header>
-        <div class="header-opacity"></div>
-        <div class="header-jumbotron">
-            <h4>Halo Selamat Datang di Portofolio Saya</h4>
-            <h5>di Portofolio Saya</h5>
-            <p>Terimakasih Sudah Berkunjung <br/>#Saya Sangat Mengharapkan Feedback Dari Anda</p>
-            <a href="#project-saya" class="button button-xl">Lihat Project yang Pernah Saya Kerjakan</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="header-overlay"></div>
+        <div class="wrapper hero-content">
+            <h4 class="greeting">Halo! Selamat Datang di Portofolio</h4>
+            <h1 class="name">Achmad Rafi Shiddik</h1>
+            <h2 class="role">Data Science Enthusiast</h2>
+            <p class="description">
+                Berpengalaman dalam mengolah data kompleks menjadi *insight* berharga <br>
+                yang berdampak pada bisnis. Saya sangat menghargai feedback Anda!
+            </p>
+            <div class="hero-buttons">
+                <a href="#project-saya" class="button button-primary">Lihat Project Saya <i class="fa-solid fa-arrow-down"></i></a>
+            </div>
         </div>
     </header>
-    <!--statistic-->
-    <section id="statistic">
+
+    <!-- Statistic / Core Skills Section -->
+    <section id="statistic" class="section">
         <div class="wrapper">
-            <div>
-                <p><i class="fa-solid fa-laptop-code"></i></p>
-                <small>experienced in analyzing data</small>
-            </div>
-            <div>
-                <p><i class="fa-solid fa-gears"></i></p>
-                <small>experienced in creating interactive dashboards</small>
-            </div>
-            <div>
-                <p><i class="fa-solid fa-chart-line"> </i></p>
-                <small>Experienced in providing insight</small>
-            </div>
-        </div>
-    </section>
-
-    <!--project yang pernah dilakukan-->
-    <section id="project-saya">
-        <div class="wrapper">
-            <h4>Project <span>Saya</span></h4>
-            <p>silahkan pilih project yang anda minati dibawah ini</p>
-
-            <div class="grid">
-                <div class="item">
-                    <img src="image/google.png"/>
-                    <div class="item-detail">
-                        <p>Is the penalizer we have created appropriate for measuring the accuracy of the customer retention model?</p>
-                        <div>
-                            <small><i class="fa-solid fa-clock"></i>2 Months</small>
-
-                            <a href="https://dashboard-segmentasi-pelanggan-asuransi-achmadrafishiddik.streamlit.app/" class="button"><i class="fa-solid fa-gauge"></i>Dashboard</a>
-
-                            <a href="https://www.canva.com/design/DAGtk9DB2yU/Cu2kuoicT70bPYYmFzylFg/edit?utm_content=DAGtk9DB2yU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="button"><i class="fa-solid fa-chalkboard"></i>ppt</a>
-                        </div>
-                    </div>
+            <div class="stat-container">
+                <div class="stat-box">
+                    <div class="stat-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3>Data Analysis</h3>
+                    <p>Experienced in extracting insights and performing deep data analysis to solve complex problems.</p>
                 </div>
-
-                <div class="item">
-                    <img src="image/Python.jpeg"/>
-                    <div class="item-detail">
-                        <p>predict how satisfied customers are in detail</p>
-                        <div>
-                            <small><i class="fa-solid fa-clock"></i>2 Months</small>
-
-                            <a href="https://customer-satisfaction-dashboard1-achmadrafi12.streamlit.app/" class="button"><i class="fa-solid fa-gauge"></i>Dashboard</a>
-
-                            <a href="https://www.canva.com/design/DAGqgBwgyYo/ZIY03u6wstkq3euhBvIJLw/edit?utm_content=DAGqgBwgyYo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="button"><i class="fa-solid fa-chalkboard"></i>ppt</a>
-                        </div>
-                    </div>
+                <div class="stat-box">
+                    <div class="stat-icon"><i class="fa-solid fa-gears"></i></div>
+                    <h3>Interactive Dashboards</h3>
+                    <p>Building intuitive, real-time dashboards to facilitate data-driven decision making.</p>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3>Business Insights</h3>
+                    <p>Providing actionable business insights aligned with core company objectives and metrics.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!--Tentang Saya-->
-    <section id="tentang-saya">
+    <!-- Project Section -->
+    <section id="project-saya" class="section">
         <div class="wrapper">
-            <h4>Tentang Saya</h4>
-            <p>data science enthusiast</p>
+            <div class="section-title">
+                <h2>Project <span>Karya Saya</span></h2>
+                <p>Berikut adalah beberapa project *Data Science* & *Analytics* yang pernah saya kerjakan</p>
+            </div>
 
-            <div>
-                <div class="foto"><img src="image/Foto.png"/></div>
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <div class="card-header">
+                        <img src="image/google.png" alt="Company Logo" class="company-logo"/>
+                        <span class="duration-badge"><i class="fa-solid fa-clock"></i> 2 Months</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="project-title">
+                            Is the penalizer we have created appropriate for measuring the accuracy of the customer retention model?
+                        </h3>
+                        <div class="project-desc">
+                            <p><strong>Deskripsi Project:</strong> In the global electronic e-commerce platform, the main challenge is to maintain customers to continue to make repeat transactions (retention) and prevent churn. This project uses a probabilistic approach for the last 12 months to analyze retention using BG/NBD and Gamma-Gamma models to estimate future transactions and customer monetary value.</p>
+                        </div>
+                        
+                        <div class="business-impact">
+                            <h4><i class="fa-solid fa-bolt"></i> Business Impact</h4>
+                            <ul>
+                                <li>By identifying high-value customer segments, companies can target marketing more efficiently, reducing acquisition costs.</li>
+                                <li>Analysis shows only 20% of customers have made repeat purchases, with an 80% churn rate. This highlights a critical retention opportunity.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://dashboard-segmentasi-pelanggan-asuransi-achmadrafishiddik.streamlit.app/" target="_blank" class="button button-outline"><i class="fa-solid fa-gauge"></i> Live Dashboard</a>
+                        <a href="https://www.canva.com/design/DAGtk9DB2yU/Cu2kuoicT70bPYYmFzylFg/edit?utm_content=DAGtk9DB2yU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="button button-outline"><i class="fa-solid fa-chalkboard"></i> Presentation</a>
+                    </div>
+                </article>
 
-                <div class="desc">
-                    <p>Halo, saya Achmad Rafi Shiddik dari Universitas Muhammadiyah Jakarta</p>
-                    <p>saya sangat tertarik dalam menganalisis dan suka memberikan insight kepada anda berdasarkan data karena saya punya prinsip untuk selalu jujur dan dilandasi dari data tanpa terlalu banyak menggunakan asumsi, jika ada yang ingin di diskusikan boleh klik linkedin atau di instagram di bawah ini ya terimakasih banyak</p>
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <div class="card-header">
+                        <img src="image/google.png" alt="Company Logo" class="company-logo"/>
+                        <span class="duration-badge"><i class="fa-solid fa-clock"></i> 2 Months</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="project-title">
+                            Data-Driven Analysis and Prediction of Delivery Delays Using Machine Learning
+                        </h3>
+                        <div class="project-desc">
+                            <p><strong>Deskripsi Project:</strong> Developed a machine learning model using XGBoost to predict delivery delays based on logistics data (43K+ records). Performed feature engineering and hyperparameter tuning with Optuna, significantly improving model performance. Identified key drivers like product category and traffic conditions.</p>
+                        </div>
+                        
+                        <div class="business-impact">
+                            <h4><i class="fa-solid fa-bolt"></i> Business Impact</h4>
+                            <ul>
+                                <li>Reduced delivery backlog by 15–20% during peak evening hours, enabling smoother next-day operations.</li>
+                                <li>Minimized unnecessary overtime costs in the morning shift by optimizing workforce utilization.</li>
+                                <li>Implemented a fast-track strategy for groceries, ensuring freshness and reducing cancellation risk.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://amazon-delivery-prediction-8mybtreann67a8cmfuzkvn.streamlit.app/" target="_blank" class="button button-outline"><i class="fa-solid fa-gauge"></i> Live Dashboard</a>
+                        <a href="https://www.canva.com/design/DAHDLCskUsU/77W-WcBeYpHws1zntTYDnA/edit?utm_content=DAHDLCskUsU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="button button-outline"><i class="fa-solid fa-chalkboard"></i> Presentation</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soft Skills & Tools -->
+    <section id="soft-skill" class="section bg-light-dark">
+        <div class="wrapper">
+            <div class="section-title">
+                <h2>Tools & <span>Soft Skills</span></h2>
+                <p>Kombinasi antara kemampuan teknis dan interpersonal.</p>
+            </div>
+            
+            <div class="skills-container">
+                <div class="skill-item">
+                    <div class="skill-img"><img src="image/Publick_speaking.jpeg" alt="Public Speaking"/></div>
+                    <span>Public Speaking</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-img"><img src="image/team_work.jpeg" alt="Team Work"/></div>
+                    <span>Team Work</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-img"><img src="image/analysis_data.jpeg" alt="Data Analysis"/></div>
+                    <span>Data Analysis</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-img"><img src="image/Python.jpeg" alt="Python"/></div>
+                    <span>Python</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-img"><img src="image/tableau.png" alt="Tableau" /></div>
+                    <span>Tableau</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="tentang-saya" class="section">
+        <div class="wrapper">
+            <div class="about-container">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <!-- Use a placeholder if image not found, but trying to use local image link first -->
+                        <img src="image/Foto.png" alt="Achmad Rafi Shiddik"/>
+                        <div class="img-backdrop"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <div class="section-title left-align">
+                        <h2>Tentang <span>Saya</span></h2>
+                    </div>
+                    <p class="lead">Halo, saya <strong>Achmad Rafi Shiddik</strong> dari Universitas Muhammadiyah Jakarta.</p>
+                    <p>Saya sangat antusias dalam menganalisis data dan memberikan <em>insight</em> bermakna. Prinsip utama saya adalah menjunjung tinggi kejujuran dan selalu berlandaskan fakta (data-driven) tanpa terlalu banyak berasumsi.</p>
+                    <p>Jika ada peluang kolaborasi atau diskusi lebih lanjut mengenai data, jangan ragu untuk menghubungi saya melalui kontak di bawah ini.</p>
+                    
                     <div class="social-media">
-                        <a href="https://www.linkedin.com/in/achmad-rafi-shiddik/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/RafiShiddik"><i class="fa-brands fa-github"></i></i></a>
-                        <a href="mailto:achmadrafishiddik0@gmail.com"><<i class="fa-solid fa-envelope"></i>></i></i></a>
-                        <a href="https://www.instagram.com/achmad_rafi_sidik/"><i class="fa-brands fa-instagram"></i></i></i></a>
+                        <a href="https://www.linkedin.com/in/achmad-rafi-shiddik/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/RafiShiddik" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="mailto:achmadrafishiddik0@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://www.instagram.com/achmad_rafi_sidik/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--Free website-->
-    <section id="free-crouse">
-        <div class="wrapper">
-            <h4> Artikel <span>Saya</span></h4>
-            <p>Saya juga suka membuat beberapa tulisan loh jangan lupa dibaca ya</p>
-            <div class="grid">
-                <div class="item">
-                    <div class="item-detail">
-                        <img src="image/Artikel-1.png"/>
-                        <div>
-                            <a href="https://repository.umj.ac.id/7613/1/Artikel%20Arlin%20Rafi.pdf" class="button"><i class="fa-solid fa-arrow-right"></i></i>Click Here</a>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="item">
-                    <div class="item-detail">
-                        <img src="image/Artikel-2.png"/>
-                        <div>
-                            <a href="https://medium.com/@achmadrafishiddik0/kenapa-harus-memilih-data-science-faa1b5a4ffcb" class="button"><i class="fa-solid fa-arrow-right"></i></i>Click Here</a>
-                        </div>
+    <!-- Articles Section -->
+    <section id="artikel-saya" class="section bg-light-dark">
+        <div class="wrapper">
+            <div class="section-title">
+                <h2>Artikel <span>Saya</span></h2>
+                <p>Saya juga senang membagikan pemikiran dan pembelajaran saya melalui tulisan.</p>
+            </div>
+            
+            <div class="article-grid">
+                <article class="article-card">
+                    <div class="article-img">
+                        <img src="image/Artikel-1.png" alt="Artikel Pertama"/>
                     </div>
-                </div>
+                    <div class="article-content">
+                        <h3>Analisis Data Akademis</h3>
+                        <a href="https://repository.umj.ac.id/7613/1/Artikel%20Arlin%20Rafi.pdf" target="_blank" class="button button-text">Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-img">
+                        <img src="image/Artikel-2.png" alt="Artikel Kedua"/>
+                    </div>
+                    <div class="article-content">
+                        <h3>Kenapa Harus Memilih Data Science?</h3>
+                        <a href="https://medium.com/@achmadrafishiddik0/kenapa-harus-memilih-data-science-faa1b5a4ffcb" target="_blank" class="button button-text">Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
     <footer>
-        <div class="wrapper">&copy; 2025 Portofolio Achmad Rafi Shiddik</div>
+        <div class="wrapper">
+            <p>&copy; 2025 Portofolio Achmad Rafi Shiddik. Designed with passion for Data.</p>
+        </div>
     </footer>
+
     <script src="js/main.js"></script>
 </body>
 </html>
